@@ -1,0 +1,11 @@
+[Unit]
+Description=MPD Song Dot Matrix Driver
+Requires=mopidy.service
+
+[Service]
+ExecStart=/usr/local/bin/main.py
+User=pi
+
+[Install]
+WantedBy=multi-user.target
+
